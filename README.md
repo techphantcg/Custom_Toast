@@ -1,4 +1,4 @@
-# Cutom_Toast
+# Custom_Toast
 This is a simple yet powerful toast libray with many features. You can download it and customize it as you want.
 
 ---------------------------------------------------------------------------------------------------------------------------------
