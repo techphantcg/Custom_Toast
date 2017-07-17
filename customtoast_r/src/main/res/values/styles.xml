@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--*****************************   custom animation styles *********************************-->
+    <!--LeftIn_LeftOut-->
+    <style name="LeftIn_LeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/li_lo</item>
+    </style>
+    <style name="li_lo">
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+
+
+    <!--RightIn_RightOut-->
+    <style name="RightIn_RightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/ri_ro</item>
+    </style>
+    <style name="ri_ro">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+
+    <!--RightIn_LeftOut-->
+    <style name="RightIn_LeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/ri_lo</item>
+    </style>
+    <style name="ri_lo">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+
+
+    <!--LeftIn_RightOut-->
+    <style name="LeftIn_RightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/li_ro</item>
+    </style>
+    <style name="li_ro">
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+
+    <!--SlideUp_SlideDown-->
+    <style name="SlideUp_SlideDown" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/su_sd</item>
+    </style>
+    <style name="su_sd">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <!--RotateIn_RotateOut-->
+    <style name="RotateIn_RotateOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/rot_i_rot_o</item>
+    </style>
+    <style name="rot_i_rot_o">
+        <item name="android:windowEnterAnimation">@anim/rotate</item>
+        <item name="android:windowExitAnimation">@anim/rotate_inv</item>
+    </style>
+
+
+    <!--ZoomIn_Zoomout-->
+    <style name="ZoomIn_Zoomout" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/zi_zo</item>
+    </style>
+    <style name="zi_zo">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+
+    <!--UpTileIn_UpTileOut-->
+    <style name="UpTileIn_UpTileOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/uti_uto</item>
+    </style>
+    <style name="uti_uto">
+        <item name="android:windowEnterAnimation">@anim/uptile_in</item>
+        <item name="android:windowExitAnimation">@anim/uptile_out</item>
+    </style>
+
+
+    <!--DownTileIn_DownTileOut-->
+    <style name="DownTileIn_DownTileOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/dti_dto</item>
+    </style>
+    <style name="dti_dto">
+        <item name="android:windowEnterAnimation">@anim/flip_down</item>
+        <item name="android:windowExitAnimation">@anim/flip_up</item>
+    </style>
+
+
+    <!--Expand_Collapse-->
+    <style name="Expand_Collapse" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/e_c</item>
+    </style>
+    <style name="e_c">
+        <item name="android:windowEnterAnimation">@anim/expand</item>
+        <item name="android:windowExitAnimation">@anim/collapse</item>
+    </style>
+
+
+    <!--PositionExpand_Right-->
+    <style name="PositionExpand_Right" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/pe_r</item>
+    </style>
+    <style name="pe_r">
+        <item name="android:windowEnterAnimation">@anim/expand_right_in</item>
+        <item name="android:windowExitAnimation">@anim/expand_right_out</item>
+    </style>
+
+
+    <!--PositionExpand_Left-->
+    <style name="PositionExpand_Left" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/pe_l</item>
+    </style>
+    <style name="pe_l">
+        <item name="android:windowEnterAnimation">@anim/expand_left_in</item>
+        <item name="android:windowExitAnimation">@anim/expand_left_out</item>
+    </style>
+
+
+    <!--PositionExpand_LeftIn_RightOut-->
+    <style name="PositionExpand_LeftIn_RightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/pe_li_ro</item>
+    </style>
+    <style name="pe_li_ro">
+        <item name="android:windowEnterAnimation">@anim/expand_left_in</item>
+        <item name="android:windowExitAnimation">@anim/expand_right_out</item>
+    </style>
+
+
+    <!--PositionExpand_RightIn_LeftOut-->
+    <style name="PositionExpand_RightIn_LeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/pe_ri_lo</item>
+    </style>
+    <style name="pe_ri_lo">
+        <item name="android:windowEnterAnimation">@anim/expand_right_in</item>
+        <item name="android:windowExitAnimation">@anim/expand_left_out</item>
+    </style>
+
+
+    <!--SwipeLeftIn_SwipeLeftOut-->
+    <style name="SwipeLeftIn_SwipeLeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/sli_slo</item>
+    </style>
+    <style name="sli_slo">
+        <item name="android:windowEnterAnimation">@anim/swipeleft_in</item>
+        <item name="android:windowExitAnimation">@anim/swipeleft_out</item>
+    </style>
+
+
+    <!--SwipeRightIn_SwipeRightOut-->
+    <style name="SwipeRightIn_SwipeRightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/sri_sro</item>
+    </style>
+    <style name="sri_sro">
+        <item name="android:windowEnterAnimation">@anim/swiperight_in</item>
+        <item name="android:windowExitAnimation">@anim/swiperight_out</item>
+    </style>
+
+
+    <!--SwipeLeftIn_SwipeRightOut-->
+    <style name="SwipeLeftIn_SwipeRightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/sli_sro</item>
+    </style>
+    <style name="sli_sro">
+        <item name="android:windowEnterAnimation">@anim/swipeleft_in</item>
+        <item name="android:windowExitAnimation">@anim/swiperight_out</item>
+    </style>
+
+
+    <!--SwipeRightIn_SwipeLeftOut-->
+    <style name="SwipeRightIn_SwipeLeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/sri_slo</item>
+    </style>
+    <style name="sri_slo">
+        <item name="android:windowEnterAnimation">@anim/swiperight_in</item>
+        <item name="android:windowExitAnimation">@anim/swipeleft_out</item>
+    </style>
+</resources>
