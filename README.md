@@ -39,15 +39,15 @@ If you want custom toast make an object of SetProperties and set the properties 
         SimpleToast.initialize(this).setProperties(simpleToast).show();
         
  
- Features :-  
-            1. Use image or color as background.  
-            2. Set radis of corners for more elegant feeling.  
-            3. Choose Where to show the Toast in the screen with or without x,y coordinates.  
-            4. Set custom font to toast with text style.  
-            5. Choose enter and exit animations for toast.  
-            6. Forget the boundries of duration of toast.  
-            7. Choose size of strokes with colors.  
-            8. Give a better view with padding and margin.  
+ <b>Features :-</b>  
+  1. Use image or color as background.<br> 
+  2. Set radis of corners for more elegant feeling.<br> 
+  3. Choose Where to show the Toast in the screen with or without x,y coordinates.<br>
+  4. Set custom font to toast with text style.<br>
+  5. Choose enter and exit animations for toast.<br>
+  6. Forget the boundries of duration of toast.<br> 
+  7. Choose size of strokes with colors.<br> 
+  8. Give a better view with padding and margin.<br> 
                 
                 
 --------------------------------------------------------------------------------------------------------------------------------
