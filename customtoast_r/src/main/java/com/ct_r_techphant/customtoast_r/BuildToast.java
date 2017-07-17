@@ -11,6 +11,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
@@ -26,8 +27,8 @@ import android.widget.TextView;
 final class BuildToast {
 
 
-    static Dialog build(Context context,SimpleToastConstants constants) {
-        Dialog dialog = GetViewForShowing.getDialog(context,constants);
+    static Dialog build(Context context, SimpleToastConstants constants) {
+        Dialog dialog = GetViewForShowing.getDialog(context, constants);
         TextView textView = new TextView(context);
         textView.setGravity(Gravity.CENTER);
         textView.setText(constants.MSG);
@@ -37,6 +38,7 @@ final class BuildToast {
                 constants.TOP_PADDING,
                 constants.RIGHT_PADDING,
                 constants.BOTTOM_PADDING);
+        textView.setTypeface(constants.TOAST_TYPEFACE, constants.TEXT_STYLE);
 
         if (constants.IMAGE_OR_BACKGROUND) {
             if (!constants.BITMAP_IMAGE.equals("") || constants.BITMAP_IMAGE.equals(null)) {
@@ -49,11 +51,11 @@ final class BuildToast {
                 }
             } else {
                 textView.setBackgroundResource(R.drawable.simple_background);
-                setBackgroundProperties(textView,constants);
+                setBackgroundProperties(textView, constants);
             }
         } else {
             textView.setBackgroundResource(R.drawable.simple_background);
-            setBackgroundProperties(textView,constants);
+            setBackgroundProperties(textView, constants);
         }
 
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -76,7 +78,7 @@ final class BuildToast {
         return dialog;
     }
 
-    private static void setBackgroundProperties(TextView textView,SimpleToastConstants constants) {
+    private static void setBackgroundProperties(TextView textView, SimpleToastConstants constants) {
         if (constants.ROUNDED_CORNERS)
             ((GradientDrawable) textView.getBackground()).setCornerRadius(constants.CORNER_RADIUS);
         else

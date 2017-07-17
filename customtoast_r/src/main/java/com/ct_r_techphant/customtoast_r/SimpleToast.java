@@ -1,6 +1,8 @@
 package com.ct_r_techphant.customtoast_r;
 
 import android.content.Context;
+import android.graphics.Typeface;
+import android.widget.Toast;
 
 /**
  * Created by Ranjan on 12-Jul-17.
@@ -57,7 +59,8 @@ public class SimpleToast {
         constants.CUSTOM_ANIMATION = properties.getAnimation();
         constants.BITMAP_IMAGE = properties.getImageBackground();
         constants.IMAGE_OR_BACKGROUND = properties.getImageAsBackground();
-
+        constants.TOAST_TYPEFACE = properties.getCustomFont();
+        constants.TEXT_STYLE = properties.getTextStyle();
         return this;
     }
 
@@ -87,7 +90,7 @@ public class SimpleToast {
     /**
      * Use to set the animation while opening or closing the Toast.
      *
-     * @param animation use <b>AnimationUtils</b> class for animating like <b>AnimationUtils.ZOOMIN_ZOOMOUT</b>.
+     * @param animation use <b>ToastAnimations</b> class for animating like <b>ToastAnimations.ZOOMIN_ZOOMOUT</b>.
      */
     public SimpleToast setAnimation(Integer animation) {
         constants.CUSTOM_ANIMATION = animation;
@@ -96,5 +99,12 @@ public class SimpleToast {
 
     private void setLayout() {
         ShowDialog.show(BuildToast.build(context, constants), constants.DURATION);
+    }
+
+    /**Method to set custom font*/
+    public SimpleToast setCustomFont(Typeface typeface, Integer text_style) {
+        constants.TOAST_TYPEFACE = typeface;
+        constants.TEXT_STYLE = text_style;
+        return this;
     }
 }

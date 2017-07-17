@@ -4,7 +4,7 @@ package com.ct_r_techphant.customtoast_r;
  * Created by Ranjan on 15-Jul-17.
  */
 
-public interface AnimationUtils {
+public interface ToastAnimations {
     Integer DEFAULT = 0;
     Integer LEFTIN_LEFTOUT = 1;
     Integer RIGHTIN_RIGHTOUT = 2;

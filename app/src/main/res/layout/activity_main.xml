@@ -23,6 +23,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toast3"
+        android:text="Toast with custom font" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toast4"
         android:text="Custom Toast" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toast5"
+        android:text="Custom Toast with circular margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toast6"
+        android:text="Custom Toast with Square margin" />
 
 </LinearLayout>

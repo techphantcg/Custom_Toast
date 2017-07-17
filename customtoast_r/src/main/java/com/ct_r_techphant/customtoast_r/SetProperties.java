@@ -1,5 +1,6 @@
 package com.ct_r_techphant.customtoast_r;
 
+import android.graphics.Typeface;
 import android.view.Gravity;
 
 /**
@@ -28,9 +29,11 @@ public class SetProperties {
     private Integer gravity = Gravity.BOTTOM;
     private Integer X_offset = 0;
     private Integer Y_offset = 100;
-    private Integer animation = AnimationUtils.DEFAULT;
+    private Integer animation = ToastAnimations.DEFAULT;
     private Integer imageBackground = 0;
     private Boolean imageAsBackground = false;
+    private Typeface customFont = Typeface.DEFAULT;
+    private Integer textStyle = Typeface.NORMAL;
 
 
     /**
@@ -198,7 +201,7 @@ public class SetProperties {
     /**
      * Use to set the animation while opening or closing the Toast.
      *
-     * @param animation use <b>AnimationUtils</b> class for animating like <b>AnimationUtils.ZOOMIN_ZOOMOUT</b>.
+     * @param animation use <b>ToastAnimations</b> class for animating like <b>ToastAnimations.ZOOMIN_ZOOMOUT</b>.
      */
     public void setAnimation(Integer animation) {
         this.animation = animation;
@@ -223,6 +226,10 @@ public class SetProperties {
         this.imageAsBackground = imageAsBackground;
     }
 
+    public void setCustomFont(Typeface customFont, Integer textStyle) {
+        this.customFont = customFont;
+        this.textStyle = textStyle;
+    }
 
     String getTextColor() {
         return textColor;
@@ -314,5 +321,13 @@ public class SetProperties {
 
     Boolean getImageAsBackground() {
         return imageAsBackground;
+    }
+
+    Typeface getCustomFont() {
+        return customFont;
+    }
+
+    Integer getTextStyle() {
+        return textStyle;
     }
 }
