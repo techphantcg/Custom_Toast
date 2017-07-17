@@ -41,7 +41,7 @@ If you want custom toast make an object of SetProperties and set the properties 
  
  <b>Features :-</b>  
   1. Use image or color as background.<br> 
-  2. Set radis of corners for more elegant feeling.<br> 
+  2. Set radius of corners for more elegant feeling.<br> 
   3. Choose Where to show the Toast in the screen with or without x,y coordinates.<br>
   4. Set custom font to toast with text style.<br>
   5. Choose enter and exit animations for toast.<br>
