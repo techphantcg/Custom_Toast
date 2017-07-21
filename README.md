@@ -51,3 +51,5 @@ If you want custom toast make an object of SetProperties and set the properties 
                 
                 
 --------------------------------------------------------------------------------------------------------------------------------
+
+<img src = "https://github.com/techphantcg/Custom_Toast/blob/master/Cus_Gif.gif">
