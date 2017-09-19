@@ -3,8 +3,6 @@ This is a simple yet powerful toast libray with many features. You can download 
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-[ ![Download](https://api.bintray.com/packages/techphant/RToast/RToast/images/download.svg) ](https://bintray.com/techphant/RToast/RToast/_latestVersion)
-
 If you donot want to do any customization with toast, then use the below line
 
         RToast.initialize(this).setMessage("Normal Toast").show();
