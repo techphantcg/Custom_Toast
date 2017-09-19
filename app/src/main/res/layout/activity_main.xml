@@ -42,5 +42,4 @@
         android:layout_height="wrap_content"
         android:onClick="toast6"
         android:text="Custom Toast with Square margin" />
-
 </LinearLayout>

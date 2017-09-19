@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.ct_r_techphant.customtoast_r.ToastAnimations;
 import com.ct_r_techphant.customtoast_r.SetProperties;
-import com.ct_r_techphant.customtoast_r.SimpleToast;
+import com.ct_r_techphant.customtoast_r.RToast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         //if you donot want to do any customization with toast, then use the below line
 
-        SimpleToast.initialize(this).setMessage("Normal Toast").show();
+        RToast.initialize(this).setMessage("Normal Toast").show();
     }
 
     public void toast2(View view) {
         //if you want simple toast with animation(Use ToastAnimation Class) and duration just use like below line
 
-        SimpleToast.initialize(this).setMessage("Custom toast message is working fine")
+        RToast.initialize(this).setMessage("Custom toast message is working fine")
                 .setAnimation(ToastAnimations.DOWNTILEIN_DOWNTILEOUT)
                 .setDuration(2000).show();
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //create a typeface of your font and pass it
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/quicksand-regular.otf");
 
-        SimpleToast.initialize(this).setMessage("Toast with custom font")
+        RToast.initialize(this).setMessage("Toast with custom font")
                 .setAnimation(ToastAnimations.POSITION_EXPAND_LEFTIN_RIGHTOUT)
                 .setCustomFont(typeface,Typeface.ITALIC)
                 .setDuration(3000)
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         //after you done with setting properties for custom toast
         //just call it, here below is an example of it.
-        SimpleToast.initialize(this).setProperties(simpleToast).show();
+        RToast.initialize(this).setProperties(simpleToast).show();
     }
 
     public void toast5(View view) {
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         //after you done with setting properties for custom toast
         //just call it, here below is an example of it.
-        SimpleToast.initialize(this).setProperties(simpleToast).show();
+        RToast.initialize(this).setProperties(simpleToast).show();
     }
 
     public void toast6(View view) {
@@ -119,6 +119,6 @@ public class MainActivity extends AppCompatActivity {
 
         //after you done with setting properties for custom toast
         //just call it, here below is an example of it.
-        SimpleToast.initialize(this).setProperties(simpleToast).show();
+        RToast.initialize(this).setProperties(simpleToast).show();
     }
 }

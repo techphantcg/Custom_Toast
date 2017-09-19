@@ -1,37 +1,38 @@
 package com.ct_r_techphant.customtoast_r;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Typeface;
-import android.widget.Toast;
+import android.graphics.drawable.Drawable;
 
 /**
  * Created by Ranjan on 12-Jul-17.
  */
 
-public class SimpleToast {
+public class RToast {
 
     private Context context;
-    private static SimpleToast simpleToast = null;
+    private static RToast rToast = null;
     private static boolean isPropertySet = false;
     private static SimpleToastConstants constants;
 
-    private SimpleToast(Context context) {
+    private RToast(Context context) {
         this.context = context;
     }
 
-    private SimpleToast() {
+    private RToast() {
     }
 
-    public static SimpleToast initialize(Context context) {
+    public static RToast initialize(Context context) {
         constants = new SimpleToastConstants();
-        if (simpleToast == null) {
+        if (rToast == null) {
             synchronized (context) {
-                if (simpleToast == null) {
-                    simpleToast = new SimpleToast(context);
+                if (rToast == null) {
+                    rToast = new RToast(context);
                 }
             }
         }
-        return (SimpleToast) simpleToast;
+        return (RToast) rToast;
     }
 
     /**
@@ -39,7 +40,7 @@ public class SimpleToast {
      *
      * @param properties object of <b>SetProperties</b> class
      */
-    public SimpleToast setProperties(SetProperties properties) {
+    public RToast setProperties(SetProperties properties) {
         constants.TEXT_COLOR = properties.getTextColor();
         constants.MSG = properties.getTextMessage();
         constants.BACKGROUND_COLOR = properties.getBackgroundColor();
@@ -67,7 +68,7 @@ public class SimpleToast {
     /**
      * Set message for Toast
      */
-    public SimpleToast setMessage(String message) {
+    public RToast setMessage(String message) {
         constants.MSG = message;
         return this;
     }
@@ -75,7 +76,7 @@ public class SimpleToast {
     /**
      * Set the duration of toast in milliseconds
      */
-    public SimpleToast setDuration(Integer duration) {
+    public RToast setDuration(Integer duration) {
         constants.DURATION = duration;
         return this;
     }
@@ -92,7 +93,7 @@ public class SimpleToast {
      *
      * @param animation use <b>ToastAnimations</b> class for animating like <b>ToastAnimations.ZOOMIN_ZOOMOUT</b>.
      */
-    public SimpleToast setAnimation(Integer animation) {
+    public RToast setAnimation(Integer animation) {
         constants.CUSTOM_ANIMATION = animation;
         return this;
     }
@@ -102,7 +103,7 @@ public class SimpleToast {
     }
 
     /**Method to set custom font*/
-    public SimpleToast setCustomFont(Typeface typeface, Integer text_style) {
+    public RToast setCustomFont(Typeface typeface, Integer text_style) {
         constants.TOAST_TYPEFACE = typeface;
         constants.TEXT_STYLE = text_style;
         return this;
