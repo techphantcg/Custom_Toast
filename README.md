@@ -1,16 +1,16 @@
-# Custom_Toast
+# RToast(CustomToast)
 This is a simple yet powerful toast libray with many features. You can download it and customize it as you want.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 If you donot want to do any customization with toast, then use the below line
 
-        SimpleToast.initialize(this).setMessage("Normal Toast").show();
+        RToast.initialize(this).setMessage("Normal Toast").show();
         
         
 If you want simple toast with animation(Use ToastAnimation Class) and duration just use like below line
 
-        SimpleToast.initialize(this).setMessage("Custom toast message is working fine")
+        RToast.initialize(this).setMessage("Custom toast message is working fine")
                 .setAnimation(ToastAnimations.DOWNTILEIN_DOWNTILEOUT)
                 .setDuration(2000).show();
                 
@@ -36,7 +36,7 @@ If you want custom toast make an object of SetProperties and set the properties 
 
         //after you done with setting properties for custom toast
         //just call it, here below is an example of it.
-        SimpleToast.initialize(this).setProperties(simpleToast).show();
+        RToast.initialize(this).setProperties(simpleToast).show();
         
  
  <b>Features :-</b>  
