@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ct_r_techphant.customtoast.MainActivity">
+    tools:context="com.techphant.customtoast.MainActivity">
 
     <Button
         android:layout_width="match_parent"

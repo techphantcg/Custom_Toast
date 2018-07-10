@@ -1,4 +1,4 @@
-package com.ct_r_techphant.customtoast;
+package com.techphant.customtoast_r;
 
 import org.junit.Test;
 

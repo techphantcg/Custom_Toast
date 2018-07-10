@@ -1,4 +1,4 @@
-package com.ct_r_techphant.customtoast;
+package com.techphant.customtoast_r;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ct_r_techphant.customtoast", appContext.getPackageName());
+        assertEquals("com.ct_r_techphant.customtoast_r.test", appContext.getPackageName());
     }
 }

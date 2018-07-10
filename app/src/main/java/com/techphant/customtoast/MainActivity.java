@@ -1,4 +1,4 @@
-package com.ct_r_techphant.customtoast;
+package com.techphant.customtoast;
 
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 
-import com.ct_r_techphant.customtoast_r.ToastAnimations;
-import com.ct_r_techphant.customtoast_r.SetProperties;
-import com.ct_r_techphant.customtoast_r.RToast;
+import com.techphant.ranjan.RToast;
+import com.techphant.ranjan.SetProperties;
+import com.techphant.ranjan.ToastAnimations;
+
 
 public class MainActivity extends AppCompatActivity {
 

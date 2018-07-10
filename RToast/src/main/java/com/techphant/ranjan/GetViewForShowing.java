@@ -1,7 +1,9 @@
-package com.ct_r_techphant.customtoast_r;
+package com.techphant.ranjan;
 
 import android.app.Dialog;
 import android.content.Context;
+
+import com.techphant.ranjan.R;
 
 /**
  * Created by Ranjan on 15-Jul-17.

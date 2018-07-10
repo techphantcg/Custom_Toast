@@ -1,4 +1,4 @@
-package com.ct_r_techphant.customtoast_r;
+package com.techphant.ranjan;
 
 import android.content.Context;
 import android.graphics.Bitmap;
