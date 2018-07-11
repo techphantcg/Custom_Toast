@@ -3,6 +3,12 @@ This is a simple yet powerful toast libray with many features. You can download 
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
+To use from Gradle:-
+
+      implementation 'com.techphant.ranjan:RToast:1.0.0'
+      
+**How to use Custom Toast**
+
 If you donot want to do any customization with toast, then use the below line
 
         RToast.initialize(this).setMessage("Normal Toast").show();
