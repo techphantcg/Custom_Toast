@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ct_r_techphant.customtoast", appContext.getPackageName());
+        assertEquals("com.techphant.customtoast", appContext.getPackageName());
     }
 }
